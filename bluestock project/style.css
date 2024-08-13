@@ -1,0 +1,185 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.buttons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.details .detail {
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.details .detail h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.details .detail p {
+    color: #333;
+    font-size: 14px;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card .buttons button {
+    background-color: #e74201;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Mobile View Styles */
+@media screen and (max-width: 768px) {
+    .grid {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .mobile-view .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-view .card {
+        width: 100%;
+    }
+
+    .mobile-view .details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-view .details .detail {
+        width: 100%;
+    }
+
+    .mobile-view .buttons {
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
